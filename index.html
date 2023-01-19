@@ -16,22 +16,31 @@
             <h1>Bem vindo ao Jumpy!</h1>
         <form action="https://www.google.com" method="post">
             <p>Nome Completo:</p>
-            <input type="username" placeholder="Nome completo" required>
+            <input type="username" placeholder="Nome completo" id="noma" >
+            <span id="mensagemErra"></span> 
             <p>Email:</p>
-            <input type="email" placeholder="Email@email.com" required>
+            <input type="email" placeholder="Email@email.com" id="nome" >
+            <span id="mensagemErre"></span> 
             <p>Telefone:</p>
-            <input type="tel" placeholder="(00) 00000-0000" required>
+            <input type="tel" placeholder="(00) 00000-0000" id="nomi" >
+            <span id="mensagemErri"></span> 
             <p>CPF:</p>
-            <input type="text" name="cpf" placeholder="000.000.000-00" required>
-            
+            <input type="text" name="cpf" placeholder="000.000.000-00" id="nomo" >
+            <span id="mensagemErro"></span>             
             <p>Senha:</p>
-            <input type="password" placeholder="*******************" required>
+            <input type="password" placeholder="*******************" id="nomu" >
+            <span id="mensagemErru"></span> 
             <div id="envie">
-           <button type="submit" value="Verificar"><b> Cadastrar </b></button>
-        </div>
+           <button type="button" value="Verificar" onclick="enviarFormulario()" ><b> Cadastrar </b></button>
+            
+            </div>
+            <span id="mensagemErrao"></span>
+            
+
         </form>
         
     </div>
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
+    
 </body>
 </html>
